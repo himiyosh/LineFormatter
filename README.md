@@ -5,7 +5,7 @@
 
 ## Features
 
-- 🔁 Convert double newlines (`\n\n`) into single (`\n`)
+ - 🔁 Collapse two or more consecutive newlines into a single newline
 - 🔁 Convert single newlines (`\n`) into double (`\n\n`)
 - 🔁 Replace semicolons (`;`) with newlines (`\n`)
 - 💡 Works on selected text or the entire document
@@ -29,7 +29,7 @@
 
 | Command | Description |
 |--------|-------------|
-| `LineFormatter: Convert Double Newlines to Single` | Replaces all occurrences of `\n\n` with `\n` |
+| `LineFormatter: Convert Double Newlines to Single` | Collapses sequences of two or more newlines into a single `\n` |
 | `LineFormatter: Convert Single Newlines to Double` | Inserts an extra newline, avoiding duplication |
 | `LineFormatter: Convert Semicolons to Newlines` | Replaces all `;` with a newline |
 
@@ -51,7 +51,7 @@ MIT
 
 ### 🔧 機能
 
-- `\n\n` を `\n` に置換
+- 2つ以上連続する改行(`\n\n` など)を1つの `\n` にまとめます
 - `\n` を `\n\n` に置換（連続改行は維持）
 - `;` を `\n` に置換
 - テキスト選択時は選択範囲だけ、選択なしならドキュメント全体が対象
