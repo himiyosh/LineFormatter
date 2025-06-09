@@ -1,4 +1,4 @@
-# lineformatter README
+# LineFormatter README
 🚀 A simple VS Code extension to normalize newline characters in your text.
 
 ---
