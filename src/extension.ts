@@ -49,7 +49,19 @@ export function activate(context: vscode.ExtensionContext) {
     }
   );
 
-  context.subscriptions.push(convertDoubleToSingle, convertSingleToDouble);
+  const convertSemicolonToNewline = vscode.commands.registerCommand(
+    'extension.convertSemicolonToNewline',
+    () => {
+      // セミコロンを改行に置換
+      transformText((text) => text.replace(/;/g, '\n'));
+    }
+  );
+
+  context.subscriptions.push(
+    convertDoubleToSingle,
+    convertSingleToDouble,
+    convertSemicolonToNewline,
+  );
 }
 
 function transformText(transform: (text: string) => string) {
