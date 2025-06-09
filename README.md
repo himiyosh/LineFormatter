@@ -7,6 +7,7 @@
 
 - 🔁 Convert double newlines (`\n\n`) into single (`\n`)
 - 🔁 Convert single newlines (`\n`) into double (`\n\n`)
+- 🔁 Replace semicolons (`;`) with newlines (`\n`)
 - 💡 Works on selected text or the entire document
 
 ---
@@ -17,6 +18,7 @@
 2. Search for one of the following:
    - `LineFormatter: Convert Double Newlines to Single`
    - `LineFormatter: Convert Single Newlines to Double`
+   - `LineFormatter: Convert Semicolons to Newlines`
 3. Run the command
 
 📝 The extension will apply the transformation to your selected text. If no text is selected, the entire document is transformed.
@@ -29,6 +31,7 @@
 |--------|-------------|
 | `LineFormatter: Convert Double Newlines to Single` | Replaces all occurrences of `\n\n` with `\n` |
 | `LineFormatter: Convert Single Newlines to Double` | Inserts an extra newline, avoiding duplication |
+| `LineFormatter: Convert Semicolons to Newlines` | Replaces all `;` with a newline |
 
 ---
 
@@ -50,12 +53,13 @@ MIT
 
 - `\n\n` を `\n` に置換
 - `\n` を `\n\n` に置換（連続改行は維持）
+- `;` を `\n` に置換
 - テキスト選択時は選択範囲だけ、選択なしならドキュメント全体が対象
 
 ### 🧭 使い方
 
-1. コマンドパレット（`Ctrl+Shift+P`）を開く  
-2. 「`LineFormatter: Convert Double Newlines to Single`」または「`LineFormatter: Convert Single Newlines to Double`」を実行  
+1. コマンドパレット（`Ctrl+Shift+P`）を開く
+2. 「`LineFormatter: Convert Double Newlines to Single`」または「`LineFormatter: Convert Single Newlines to Double`」、または「`LineFormatter: Convert Semicolons to Newlines`」を実行
 3. 結果を確認！
 
 ---
