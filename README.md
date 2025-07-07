@@ -5,7 +5,7 @@
 
 ## Features
 
- - 🔁 Collapse two or more consecutive newlines into a single newline
+- 🔁 Collapse two or more consecutive newlines into a single newline
 - 🔁 Convert single newlines (`\n`) into double (`\n\n`)
 - 🔁 Replace semicolons (`;`) with newlines (`\n`)
 - 💡 Works on selected text or the entire document
